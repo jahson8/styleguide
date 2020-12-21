@@ -24,6 +24,7 @@ h1,
 h2,
 h3 {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 a:link {
@@ -34,6 +35,10 @@ a:link {
 .container {
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.dp-flex {
+    display: flex
 }
 
 
@@ -50,9 +55,56 @@ a:link {
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
-    text-align: center;
 }
 
+/* Theme Section*/
+.pallettes {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px 16px;
+}
+.pallette {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin:1em; 
+    padding-top:1em;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.pal-name {
+    text-transform: capitalize ;
+}
+
+.name {
+    line-height: .5;
+    background-color: #FCF7F8;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.space-cadet {
+    background-color: #2C2C43;
+}
+
+.english-violet {
+    background-color: #442C44;
+}
+
+.rifle-green {
+    background-color: #44442c;
+}
+
+.kombu-green {
+    background: #2C4438;
+}
+
+.eerie-black {
+    background: #242424;
+}
 
 
 
