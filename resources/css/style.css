@@ -1,3 +1,60 @@
-html {
-    background-color: aquamarine;
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
+
+html {
+    background-color: #FCF7F8;
+
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'Martel', serif;
+    position: relative;
+    top: 91px;
+    color: #242424;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/* Header Styles */
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    background-color:  #2C2C43;
+    color: #FCF7F8;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+
+
+
+/* UI Styles */
+
