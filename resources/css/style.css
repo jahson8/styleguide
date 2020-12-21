@@ -25,6 +25,7 @@ h2,
 h3 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    color: #2C2C43;
 }
 
 a:link {
@@ -51,17 +52,26 @@ a:link {
     z-index: 10;
     opacity: 1;
     background-color:  #2C2C43;
-    color: #FCF7F8;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 
+.main-header h1 {
+    color: #FCF7F8;
+}
+
 /* Theme Section*/
+#theme {
+    flex-direction: column;
+}
+
 .pallettes {
-    width: 80%;
-    margin: 0 auto;
+    align-self: center;
+    justify-content: center;
     padding: 2px 16px;
+    flex-direction: column;
+    
 }
 .pallette {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -71,19 +81,23 @@ a:link {
     border-radius: 5px;
     text-align: center;
     height: 300px;
-    display: flex;
+    width: 300px;
     flex-direction: column-reverse;
+    flex-basis: 300px;
+    
 }
 
-.pal-name {
-    text-transform: capitalize ;
-}
+
 
 .name {
     line-height: .5;
     background-color: #FCF7F8;
-    padding: 1em;
+    padding: .5em;
     font-weight: bold;
+}
+
+.pal-name {
+    text-transform: capitalize ;
 }
 
 .space-cadet {
@@ -105,6 +119,25 @@ a:link {
 .eerie-black {
     background: #242424;
 }
+
+@media(min-width: 37.5em){
+   .pallettes{
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+
+    .pallette { 
+        flex-basis: 200px;
+    } 
+}
+
+@media(min-width: 48.4375em){
+    .pallettes{
+        justify-content: space-evenly;
+    }
+}
+
+
 
 
 
