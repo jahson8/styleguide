@@ -8,7 +8,6 @@
 
 html {
     background-color: #FCF7F8;
-
 }
 
 body {
@@ -19,28 +18,38 @@ body {
     top: 91px;
     color: #242424;
 }
-
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #2C2C43;
 }
 
-a:link {
+
+a{
     text-decoration: none;
+    color: #44442C;
 }
+
+section + section,
+footer {
+    margin-top: 100px;
+}
+
 
 
 .container {
-    padding-left: 1em;
-    padding-right: 1em;
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
+
 
 .dp-flex {
     display: flex
 }
+
+
 
 
 /* Header Styles */
@@ -57,21 +66,19 @@ a:link {
     -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 
-.main-header h1 {
+.main-header h1,
+footer a {
     color: #FCF7F8;
 }
 
-/* Theme Section*/
-#theme {
-    flex-direction: column;
-}
+/* Theme */
+
 
 .pallettes {
-    align-self: center;
     justify-content: center;
+    align-items: center;
     padding: 2px 16px;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 .pallette {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -84,7 +91,6 @@ a:link {
     width: 300px;
     flex-direction: column-reverse;
     flex-basis: 300px;
-    
 }
 
 
@@ -137,9 +143,75 @@ a:link {
     }
 }
 
+@media(min-width: 62.5em){
+    .pallettes{
+        justify-content: flex-start;
+    }
+}
 
 
+/* Typography */
 
 
-/* UI Styles */
+.bold{
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.martel {
+    font-family: 'Martel', serif;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;  
+}
+
+.font {
+    align-items: center;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+.font-family{
+    padding: 1em;
+}
+
+.font-family h1, 
+.font-family h2,
+.font-family h3 {
+    text-align: left;
+    margin-top:0;
+}
+
+
+.font-family + .font-family {
+    margin-top: 1em;
+}
+@media(min-width: 62.5em){
+  
+    .font-family{
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    .font-family + .font-family{
+        margin-top: 0;
+    }
+
+    .font {
+        flex-direction: row;
+        justify-content:center;
+    }
+}
+
+
+/* Typography */
+footer{
+    background-color: #44442C;
+    padding: 1em;
+}
+
 
